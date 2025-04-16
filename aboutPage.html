@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JEN TAT | Contact Me!</title>
+    <title>JEN TAT | My Projects</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel = "icon" type = "image/png" href = "myLogo.png">
     <!-- For apple devices -->
@@ -16,18 +16,57 @@
     <style>
       html {
         scroll-behavior: smooth;
-overflow-y: scroll;
       }
+
+.pdf-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+    iframe {
+      width: 100%;
+      max-width: 794px; /* A4 width in px at 96 DPI */
+      height: 1123px;    /* A4 height in px at 96 DPI */
+      border: none;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+    @media (max-width: 800px) {
       iframe {
-        max-height: unset;
+        width: 90%;
+        height: auto;
+        aspect-ratio: 794 / 1123;
       }
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      position: relative;
+      padding-left: 20px;
+    }
+
+    li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      background-color: #ff4772;
+      transform: rotate(45deg); /* Rotates the square into a diamond */
+    }
     </style>
  </head>
 
  <body>
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="#">
+    <a class="navbar-item" href="index.html"">
       <img src="Jt.png" width="112" height="30">
     </a>
 
@@ -58,11 +97,11 @@ overflow-y: scroll;
         </a>
 
         <div class="navbar-dropdown">
-          <a class="navbar-item">
+          <a class="navbar-item" href="Jen Tat - Resume.pdf" target="_blank">
             Résumé
           </a>
           <a class="navbar-item">
-            Experience
+            Extracurriculars
           </a>
           <a class="navbar-item">
             Skills
@@ -81,8 +120,83 @@ overflow-y: scroll;
   </div>
 </nav>
 
-<section class="section">
-  About
+<div class="hero-body">
+   <section class="container">
+     <div class="hero-body">
+       <div class="container">
+         <h1 class="title">
+           About Me
+         </h1>
+         <p>I am a passionate and enthusiastic software developer with aims to utilize my career and skills to be able to meaningfully contribute to the world I live in. As my career progressed, I became more selective in the opportunities I decided to pursue. I am incredibly grateful with the opportunity I received to join the clean energy revolution and work as a Full-Stack Software Engineer at the solar energy company, <b><a style="color:#ff4772" href="https://vctgroup.com/about/" target="_blank">VCT Group Inc.</a></b>, as well as my time as a Computational Cancer Genomics Analyst at <b><a style="color:#ff4772" href="https://www.sickkids.ca/en/about/about-sickkids/" target="_blank">The Hospital for Sick Children</a></b> contributing to the <b><a style="color:#ff4772" href="https://www.sickkids.ca/en/about/precision-child-health/" target="_blank">Precision Child Health</a></b> project.</p>
+	</div>
+        </div>
 </section>
+
+<section class="container">
+<div class="tile is-ancestor">
+  <div class="tile is-4 is-vertical is-parent">
+    <div style="width: 100%" class="tile is-child box">
+      <p class="title is-5">Computational Cancer Genomics Analyst</p>
+<figure>
+  <img width="300" height="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/The_Hospital_for_Sick_Children_Logo.svg/2560px-The_Hospital_for_Sick_Children_Logo.svg.png" />
+</figure>
+<br />
+<ul>
+  <li>Led the development of the long-read usage component of the <b><a style="color:#ff4772" href="https://github.com/shlienlab/pre-otter" target="_blank">pre-otter</a></b> RNA sequencing pipeline in <b>Python</b>.</li>
+</ul>
+    </div>
+    <div style="width: 100%" class="tile is-child box">
+      <p class="title is-5">Full-Stack Engineer</p>
+<figure>
+  <img width="300" height="100" src="https://vctgroup.com/wp-content/uploads/2020/09/smaller.png" />
+</figure>
+<br />
+<ul>
+  <li>Led ERP platform to MVP using <b>Java</b> and <b>React</b>.</li>
+  <li>Spearheaded the design and development of the What You See Is What You Get editor using <b>TipTap</b>.</li>
+</ul>
+    </div>
+    <div style="width: 100%" class="tile is-child box">
+      <p class="title is-5">Software Developer</p>
+<figure>
+  <img width="150" height="50" src="https://static.wikia.nocookie.net/logopedia/images/8/8d/Euna_Solutions_2023.svg/revision/latest/scale-to-width-down/300?cb=20230613214658" />
+<span style="display: inline-block; width: 2ch;">&#9;</span>
+  <img width="210" height="70" src="https://www.cappo.org/resource/resmgr/partnership_files/2023/Logo_-_Bonfire_a_Euna_Soluti.png" />
+</figure>
+<br />
+<ul>
+  <li>Refactored codebase from <b>JavaScript</b> to <b>TypeScript</b>.</li>
+  <li>Improved old and aligned new front end components to be highly accessible <b>(WCAG 2.0 compliant)</b>.</li>
+</ul>
+    </div>
+<div class="tile is-child box">
+      <p class="title is-5">Full-Stack Engineer</p>
+<figure>
+  <img width="300" height="100" src="https://www.webuildadream.com/wp-content/uploads/2024/08/logo_-_Build-a-Dream_300dpi.webp" />
+</figure>
+<br />
+<ul>
+  <li>Developed their first flagship website dedicated to United Nation's International Day of the Girl.</li>
+  <li>Pioneered the development and design of their first mobile app using <b>ReactNative</b>.</li>
+</ul>
+    </div>
+
+  </div>
+  <div class="tile is-parent" style="display: flex; align-items: center; justify-content: center; min-height: 100vh">
+    <div class="tile is-child box" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center">
+<div class="pdf-wrapper">
+  <iframe
+    src="Jen Tat - Resume.pdf">
+  </iframe>
+</div>
+    </div>
+  </div>
+</div>
+
+   </section>
+
+</div>
+
+
  </body>
 </html>
