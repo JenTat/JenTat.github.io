@@ -17,6 +17,47 @@
       html {
         scroll-behavior: smooth;
       }
+  ul {
+    margin: 2ch !important;
+    padding: 0 !important;
+  }
+
+  /* Top-level list items */
+  ul > li {
+    list-style: none;
+    position: relative;
+    padding-left: 1.2em; /* space for the diamond */
+  }
+
+  ul > li::before {
+    content: "◆"; /* Filled diamond */
+    position: absolute;
+    left: 0; /* Make the bullet align to the left edge */
+    top: 0.1em;
+    color: #ff4772;
+    font-size: 0.85em;
+  }
+
+  /* Nested list (nested <ul>) */
+  ul li ul {
+    margin: 0;
+    padding-left: 1.2em; /* Add slight indent for nested list */
+  }
+
+  ul li ul > li {
+    list-style: none;
+    position: relative;
+    padding-left: 1.2em;
+  }
+
+  ul li ul > li::before {
+    content: "◇"; /* Outlined diamond for nested items */
+    position: absolute;
+    left: 0;
+    top: 0.1em;
+    color: #ff4772;
+    font-size: 0.85em;
+  }
     </style>
  </head>
 
